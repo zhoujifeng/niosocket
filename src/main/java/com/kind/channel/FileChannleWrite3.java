@@ -7,7 +7,9 @@ import java.nio.channels.FileChannel;
 
 /**
  * 测试FileChannel Write()方法相关特性
- * 1 验证write方法具有同步特性
+ *  验证write方法具有同步特性
+ *  方法中开启20个线程同时进行对文件的写入，没有字符乱序的情况出现
+ *  说明是同步的，多线程下线程安全的
  */
 public class FileChannleWrite3 {
 

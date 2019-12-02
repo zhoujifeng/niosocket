@@ -16,7 +16,7 @@ public class FileChannleWrite1 {
     public static void main(String[] args) throws IOException {
 
         //构建输出流和通道
-        FileOutputStream fosref = new FileOutputStream("src/main/resources/a.txt");
+        FileOutputStream fosref = new FileOutputStream("src/main/resources/file/a.txt");
         FileChannel fileChannel = fosref.getChannel();
 
         //构建缓冲区

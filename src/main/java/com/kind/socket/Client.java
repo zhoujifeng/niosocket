@@ -16,8 +16,9 @@ public class Client {
         try {
             Socket socket = new Socket("localhost",8088);
             System.out.println("客户端连接结束"+new Date());
-            socket.close();
-        } catch (IOException e) {
+            //socket.close();
+            Thread.sleep(5000);
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
